@@ -5,6 +5,7 @@ import Products from "./pages/products/Products";
 import Navbar from "./components/navbar/Navbar";
 import Menu from "./components/menu/Menu";
 import Footer from "./components/footer/Footer";
+import Login from "./pages/login/Login";
 
 function App() {
   const Layout = () => {
@@ -43,6 +44,10 @@ function App() {
         },
       ],
     },
+    {
+      path:"/login",
+      element:<Login />
+    }
   ]);
 
   return <RouterProvider router={router} />;
